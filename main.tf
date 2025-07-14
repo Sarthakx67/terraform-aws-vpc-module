@@ -8,9 +8,7 @@ resource "aws_vpc" "main" {
     {
         Name = var.project_name
     },
-    {
-        vpc_tags=var.vpc_tags
-    }
+    var.vpc_tags
   )
 }
 resource "aws_internet_gateway" "igw" {
