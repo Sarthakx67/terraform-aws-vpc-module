@@ -16,9 +16,7 @@ resource "aws_internet_gateway" "igw" {
 
   tags = merge(
     var.common_tags,
-    {
-        Name = var.igw_tags
-    },
+    var.igw_tags,
     {
         Name = var.project_name
     }
