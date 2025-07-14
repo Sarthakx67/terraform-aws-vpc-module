@@ -21,9 +21,6 @@ variable "vpc_tags" {
 variable "igw_tags" {
   default = {}
 }
-variable "availability_zone" {
-  
-}
 variable "public_subnet_cidr_block" {
   type = list
   validation { # validation is used to restrict amout of AZ's in this case
@@ -46,6 +43,9 @@ variable "database_subnet_cidr_block" {
   }
 }
 variable "nat_gateway_tags" {
+  default = {}
+}
+variable "public_route_table_tags" {
   default = {}
 }
 variable "private_route_table_tags" {

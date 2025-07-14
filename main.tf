@@ -78,7 +78,8 @@ resource "aws_route_table" "public_rt" {
     var.common_tags,
     {
       Name = "${var.project_name}-public_rt"
-    }
+    },
+    var.public_route_table_tags
   )
 }
 resource "aws_eip" "elastic_ip" {
