@@ -33,8 +33,7 @@ This module provisions the following architecture:
 *   Separate **Route Tables** for the private and database tiers, routing all outbound traffic through the NAT Gateway. This allows backend resources to access the internet (e.g., for software updates) without being directly exposed to inbound traffic.
 *   A **DB Subnet Group** that bundles the database subnets, required for services like Amazon RDS.
 
-![VPC Architecture Diagram](<link-to-your-custom-vpc-diagram.png>)  
-*It is highly recommended to create a custom diagram visualizing this structure and place it in an `assets` folder.*
+![VPC Architecture Diagram](/assets/vpc-architecture-1.png)  
 
 ---
 
