@@ -34,7 +34,7 @@ This module provisions the following architecture:
 *   A **DB Subnet Group** that bundles the database subnets, required for services like Amazon RDS.
 
 ![VPC Architecture Diagram](/assets/vpc-architecture-1.png)  
-
+![VPC Architecture Diagram](/assets/vpc-architecture-2.png) 
 ---
 
 ## How to Use This Module
